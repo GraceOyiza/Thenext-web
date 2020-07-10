@@ -1,0 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.first-nav {
+display: flex;
+/* grid-template-columns: 1fr 1fr; */
+}
