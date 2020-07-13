@@ -240,24 +240,53 @@ aside ul {
   color: black;
 }
 
-.aside-grid1 {
-  background-color: #FF4422;
-  padding: 8px 2px 8px 60px;
+aside > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
 }
 
-.aside-grid1 img {
-  width: 60px;
-  height: 60px;
-  margin: 10px;
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  /* z-index: 10; */
+.image {
+  width: 55px;
+  position: absolute;
+  z-index: 10;
+  left: 5px;
+  top: 10px;
+  height: 20%;
 }
+
+.image img {
+  width: 100%;
+  
+}
+
+.image1 {
+  position: relative;
+}
+
+ .aside-grid1 {
+ position: relative;
+}
+
+.aside-grid1 h4 {
+  background-color: #FF4422;
+  padding: 8px 2px 8px 80px;
+  color: #fff;
+  
+} 
 
 .aside-grid2 {
   background-color: rgba(295, 68, 34, 0.08);
-  padding: 8px 2px 15px 60px;
+  padding: 8px 2px 15px 80px;
+}
+
+.aside-grid2 p {
+  font-weight: bold;
+}
+
+.aside-grid2 span {
+  color: #aaa;
+  font-size: 13px;
 }
 
 .aside-grid3 {
