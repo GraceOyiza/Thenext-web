@@ -222,5 +222,65 @@ aside {
 
 aside ul {
   display: flex;
+ 
+}
 
+.sidehead ul li {
+   /* padding-left: 10px; */
+  margin-top: 10px ;
+  margin-right: 30px;
+ 
+}
+
+.sidehead ul li a {
+  color: #FF4422;
+  font-size: 18px;
+}
+
+.sidehead ul li a:hover {
+  color: black;
+}
+
+.aside-grid1 {
+  background-color: #FF4422;
+  padding: 8px 2px 8px 60px;
+
+}
+
+.aside-grid1 img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  /* z-index: 10; */
+}
+
+.aside-grid2 {
+  background-color: rgba(295, 68, 34, 0.08);
+  padding: 8px 2px 15px 60px;
+}
+
+.aside-grid3 {
+  background-color: rgb(255, 246, 246);
+  padding: 12px;
+  color: #555555;
+}
+
+.aside-grid4 {
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  background-color: rgb(255, 246, 246);
+  padding: 20px 0 55px 10px;
+  font-size: 12px;
+}
+
+.aside-grid4 span {
+  color: #aaa;
+}
+
+ aside > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
 }
