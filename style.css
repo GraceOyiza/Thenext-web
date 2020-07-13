@@ -4,11 +4,11 @@
     box-sizing: border-box; 
 }
  
-ul{
+ul {
     list-style: none;
  }
  
- a {
+a {
      text-decoration: none;
  }
 
@@ -35,7 +35,6 @@ ul{
 .left-nav {
     display: flex;
    justify-content: flex-end;
-
 }
 
 .left-nav li {
@@ -47,10 +46,6 @@ ul{
     color: rgb(170, 165, 165);
 }
 
-.grey:hover { 
-    color: white;
-}
-
 .white {
     color: white;
 }
@@ -60,7 +55,7 @@ ul{
     grid-template-columns: 2fr 0.1fr;
 }
 
-.second-nav{
+.second-nav {
     display: flex;
     padding: 20px;
     background-color: white;
@@ -75,11 +70,7 @@ ul{
     color: rgb(99, 96, 96);
 }
 
-.text-black:hover {
-    color: black;
-}
-
-.search{
+.search {
   display: flex;
   justify-content: flex-end;
   padding: 25px;
@@ -89,10 +80,6 @@ ul{
 
 .search-button {
     color:  #aaa;
-}
-
-.search-button:hover {
-  color: grey;
 }
 
 main {
@@ -107,7 +94,7 @@ main {
  
 .coldate {
 color: #fff;
-float:right;
+float: right;
 padding: 1.1em;
 }
 
@@ -132,7 +119,7 @@ padding: 1.1em;
   margin-bottom: 1%;
 }
 
-.sub-text{
+.sub-text {
   text-decoration: none;
   color: #fff;
   font-size: 25px;
@@ -159,10 +146,6 @@ padding: 1.1em;
   grid-area: small-bottom;
 }
 
-.grey:hover {
-  color: white;
-}
-
 section {
   width: auto;
   margin: 5% 5%;
@@ -185,12 +168,6 @@ aside h2 {
   display: none;
 }
 
-section h2:hover,
-aside h2:hover,
-.most h2:hover {
-  color: #000;
-}
-
 section a {
   font-size: 16px;
   color: #000;
@@ -198,11 +175,6 @@ section a {
   text-decoration: none;
   display: block;
   width: 93%;
-}
-
-section span {
-  color: #aaa;
-  font-size: 13px;
 }
 
 section img {
@@ -223,7 +195,6 @@ aside {
 
 aside ul {
   display: flex;
- 
 }
 
 .sidehead ul li {
@@ -234,10 +205,6 @@ aside ul {
 .sidehead ul li a {
   color: #FF4422;
   font-size: 18px;
-}
-
-.sidehead ul li a:hover {
-  color: black;
 }
 
 aside > ul {
@@ -272,7 +239,6 @@ aside > ul {
   background-color: #FF4422;
   padding: 8px 2px 8px 80px;
   color: #fff;
-  
 } 
 
 .aside-grid2 {
@@ -282,11 +248,6 @@ aside > ul {
 
 .aside-grid2 p {
   font-weight: bold;
-}
-
-.aside-grid2 span {
-  color: #aaa;
-  font-size: 13px;
 }
 
 .aside-grid3 {
@@ -300,10 +261,6 @@ aside > ul {
   background-color: rgb(255, 246, 246);
   padding: 20px 0 55px 10px;
   font-size: 12px;
-}
-
-.aside-grid4 span {
-  color: #aaa;
 }
 
  aside > ul {
@@ -341,16 +298,6 @@ aside > ul {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 100;
 	color: #fff;
-}
-
-.absolute span {
-	font-size: 12px;
-	color: rgba(255, 255, 255, 0.6)
-}
-
-.absolute a:hover,
-.mostflex-left a:hover {
-	text-decoration: underline;
 }
 
 .most {
@@ -406,15 +353,6 @@ aside > ul {
   margin: 3% 0;
 }
 
-.latestdeals span {
-  margin-right: 1%;
-  text-decoration: line-through;
-}
-
-.latestdeals a:hover {
-  color: #ff4422;
-}
-
 .most ul li a {
 	text-decoration: none;
 	color: #555;
@@ -431,4 +369,121 @@ aside > ul {
   display: inline-block; 
   width: 1em; 
   margin-left: -1.7em; 
+}
+
+footer {
+  bottom: 0%;
+  position: static;
+  background-color: #131313;
+  right: 0%;
+  left: 0%;
+  height: 12em;
+}
+
+.footerlogo ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footerlogo i {
+  font-size: larger;
+  color: #111;
+}
+
+.footerlogo ul li {
+  list-style: none;
+  padding: 0.8em;
+  background-color: rgb(43, 39, 39);
+  border-radius: 50%;
+  margin-right: 0.4em;
+  margin-top: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about li {
+	color:white;
+}
+
+.brandrights {
+	padding: 39px 0;
+	background-color: #000;
+	justify-content: center;
+	text-align: center;
+}
+
+.brandrights i {
+	color: red;
+}
+
+.aside-grid4 span {
+  color: #aaa;
+}
+
+.latestdeals span {
+  margin-right: 1%;
+  text-decoration: line-through;
+}
+
+.aside-grid2 span {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.absolute span {
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.6)
+}
+
+section span {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.brandrights span {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #aaa;
+	font-size: 13px;
+}
+
+.latestdeals a:hover {
+  color: #ff4422;
+}
+
+.sidehead ul li a:hover {
+  color: black;
+}
+
+section h2:hover,
+aside h2:hover,
+.most h2:hover {
+  color: #000;
+}
+
+.grey:hover {
+  color: white;
+}
+
+.grey:hover { 
+  color: white;
+}
+
+.text-black:hover {
+  color: black;
+}
+
+.absolute a:hover,
+.mostflex-left a:hover {
+	text-decoration: underline;
+}
+
+.footerlogo ul li:hover {
+  background-color: #131313;
+}
+
+.footerlogo i:hover {
+  color: #eee;
+}
+
+.search-button:hover {
+  color: grey;
 }
