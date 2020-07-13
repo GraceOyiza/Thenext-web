@@ -117,6 +117,7 @@ float:right;
 padding: 1.1em;
 }
 
+
 .col1 {
   background-image: url(./images/mainimg1.png);
   grid-area: large;
@@ -125,10 +126,11 @@ padding: 1.1em;
   background-size: cover;
 }
 
-.col1 a {
+.text {
   font-size:56px;
   color: #FFF;
   text-decoration: none;
+ 
 }
 
 .col2 {
@@ -136,6 +138,34 @@ padding: 1.1em;
   background-size: cover;
   grid-area: small-top;
   margin-bottom: 1%;
+}
+
+/* .col2 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+} */
+
+.sub-text{
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.colfooter {
+  color: grey;
+  padding-left: 40px;
+}
+
+.colfooter a {
+  color: grey;
+}
+
+.coldate a {
+  width: 100%;
+  padding-top: 30px;
 }
 
 .row2 {
