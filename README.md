@@ -2,7 +2,7 @@
 
 This project contains floating and positioning elements. Given colors like make it seem as professional.
 
-<img src="images/screenshot-rawcdn.githack.com-2020.07.13-17_29_51" alt="">
+<img src="./images/thenextwebSS.png" alt="Screenshot">
 
 ## Built With
 
@@ -13,7 +13,7 @@ This project contains floating and positioning elements. Given colors like make 
 
 ## Live Demo
 
-[Live] (https://rawcdn.githack.com/GraceOyiza/Thenext-web/4a6e194faed5312febc6138948b0e19e7bdbd571/index.html)
+[Live] (https://rawcdn.githack.com/GraceOyiza/Thenext-web/6ac99a3d98b69139d379d5dd78d33443a2368097/index.html)
 
 
 👤 **Author**

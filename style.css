@@ -101,13 +101,14 @@ main {
 .col1 {
   background-image: url(./images/mainimg1.png);
   grid-area: large;
-  height: 420px;
+  height: 520px;
   margin-right: 1%;
   background-size: cover;
+  background-position: center center;
 }
 
 .colmargin {
-  margin-top: 22%;
+  margin-top: 16%;
 }
 
 .text {
@@ -136,12 +137,12 @@ main {
 }
 
 section a {
-  font-size: 16px;
+  font-size: 22px;
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   display: block;
-  width: 93%;
+  width: 70%;
 }
 
 .colfooter a {
@@ -327,6 +328,7 @@ aside > ul {
 
 .most {
   margin-bottom: 10%;
+  width: 66%;
 }
 
 .most img {
@@ -487,7 +489,14 @@ aside h2:hover,
   color: grey;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
+  .most {
+    width: 105%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  
   main {
     width: 95%;
   }
@@ -512,11 +521,42 @@ aside h2:hover,
   }
 
   .most {
-    width: 88%;
+    width: 94%;
+    margin-bottom: -25%;
+  }
+
+  .secmargin {
+    margin-top: 100%;
   }
 }
 
 @media screen and (max-width: 770px) {
+  nav {
+    width: 116%;
+  }
+
+  main {
+    width: 114%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .col1 {
+    grid-column: 1/4;
+    grid-row: 1/4;
+  }
+
+  .col2 {
+    grid-column: 4/5;
+  }
+
+  .row2 {
+    grid-column: 4/5;
+  }
+
+  .most {
+    width: 108%;
+  }
+  
   .text {
     font-size: 18px;
     font-weight: 900;
@@ -534,14 +574,12 @@ aside h2:hover,
   .second-nav li {
     margin-top: -15px;
     font-size: 8px;
-    padding-right: 10px ;
-    
+    padding-right: 10px;
   }
 
   .first-nav li {
     padding-left: 10px;
     font-size: 10px;
-    
   }
 
   .first {
@@ -549,65 +587,10 @@ aside h2:hover,
     grid-template-columns: 1fr 1fr;
     padding: 7px;
     background-color: black;
-  
-}
-
-/* .search {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-  color: red;
-  background-color: white;
-} */
-
-main {
-  margin-top: -50px;
-  margin-left: 3px;
-  display: grid;
-  grid-template-columns: 1fr 500px;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-    "large small-top"
-    "large small-bottom";
-}
-
-.col1 {
-  grid-area: large;
-  height: 270px;
-  margin-right: 1%;
-  background-size: cover;
-  background-position: center;
-}
-
-.col2 {
-  background-size: cover;
-  grid-area: small-top;
-  margin-bottom: 1%;
-}
-
-.row2 {
-  background-size: cover;
-  grid-area: small-bottom;
-}
-
-.colmargin {
-  margin-top: 72%;
-  margin-left: 10px;
-}
-
-.colfooter {
-  color: grey;
-  padding-left: 2px;
-  font-size: 10px;
-}
-
-}
-@media screen and (max-width: 400px) {
-  .text {
-    font-size: 24px;
   }
 
-  .subtext {
-    font-size: 16px;
+  .secmargin {
+    margin-top: 150%;
   }
 }
+
