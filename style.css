@@ -135,6 +135,15 @@ main {
   padding-left: 40px;
 }
 
+section a {
+  font-size: 16px;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  display: block;
+  width: 93%;
+}
+
 .colfooter a {
   color: grey;
 }
@@ -146,7 +155,7 @@ main {
 
 .row2 {
   background-image: url(./images/mainimg3.jpg);
-  background-size: cover;
+  background- size: cover;
   grid-area: small-bottom;
 }
 
@@ -172,15 +181,6 @@ aside h2 {
   display: none;
 }
 
-section a {
-  font-size: 16px;
-  color: #000;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  display: block;
-  width: 93%;
-}
-
 section img {
   width: 270px;
   height: 135px;
@@ -201,9 +201,40 @@ aside ul {
   display: flex;
 }
 
+.about li {
+  color: white;
+}
+
 .sidehead ul li {
   margin-top: 10px;
   margin-right: 30px;
+}
+
+.footerlogo ul li {
+  list-style: none;
+  padding: 0.8em;
+  background-color: rgb(43, 39, 39);
+  border-radius: 50%;
+  margin-right: 0.4em;
+  margin-top: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.absolute a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-bottom: 2%;
+}
+
+.mostflex-left a {
+  color: #f42;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
 }
 
 .sidehead ul li a {
@@ -287,15 +318,6 @@ aside > ul {
   background-size: cover;
 }
 
-.absolute a {
-  color: #fff;
-  font-size: 20px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  display: block;
-  margin-bottom: 2%;
-}
-
 .absolute p {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
@@ -331,14 +353,6 @@ aside > ul {
 
 .mostflex {
   padding-left: 3px;
-}
-
-.mostflex-left a {
-  color: #f42;
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  text-decoration: none;
 }
 
 .most ul {
@@ -393,20 +407,6 @@ footer {
   color: #111;
 }
 
-.footerlogo ul li {
-  list-style: none;
-  padding: 0.8em;
-  background-color: rgb(43, 39, 39);
-  border-radius: 50%;
-  margin-right: 0.4em;
-  margin-top: 1.1em;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.about li {
-  color: white;
-}
-
 .brandrights {
   padding: 39px 0;
   background-color: #000;
@@ -416,6 +416,11 @@ footer {
 
 .brandrights i {
   color: red;
+}
+
+section span {
+  color: #aaa;
+  font-size: 13px;
 }
 
 .aside-grid4 span {
@@ -437,11 +442,6 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-section span {
-  color: #aaa;
-  font-size: 13px;
-}
-
 .brandrights span {
   font-family: Arial, Helvetica, sans-serif;
   color: #aaa;
@@ -450,6 +450,11 @@ section span {
 
 .latestdeals a:hover {
   color: #f42;
+}
+
+.absolute a:hover,
+.mostflex-left a:hover {
+  text-decoration: underline;
 }
 
 .sidehead ul li a:hover {
@@ -468,11 +473,6 @@ aside h2:hover,
 
 .text-black:hover {
   color: black;
-}
-
-.absolute a:hover,
-.mostflex-left a:hover {
-  text-decoration: underline;
 }
 
 .footerlogo ul li:hover {
