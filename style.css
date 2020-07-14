@@ -206,6 +206,10 @@ aside ul {
   color: white;
 }
 
+.latestdeals a {
+  margin: 3% 0;
+}
+
 .sidehead ul li {
   margin-top: 10px;
   margin-right: 30px;
@@ -243,7 +247,7 @@ aside ul {
   font-size: 18px;
 }
 
-aside > ul {
+aside ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 25px;
@@ -366,10 +370,6 @@ aside > ul {
 .latestdeals a img {
   width: 270px;
   height: 200px;
-}
-
-.latestdeals a {
-  margin: 3% 0;
 }
 
 .most ul li a {
@@ -496,7 +496,6 @@ aside h2:hover,
 }
 
 @media screen and (max-width: 1025px) {
-  
   main {
     width: 95%;
   }
@@ -539,7 +538,7 @@ aside h2:hover,
     width: 114%;
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
   .col1 {
     grid-column: 1/4;
     grid-row: 1/4;
@@ -556,7 +555,7 @@ aside h2:hover,
   .most {
     width: 108%;
   }
-  
+
   .text {
     font-size: 18px;
     font-weight: 900;
