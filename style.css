@@ -155,7 +155,7 @@ section a {
 
 .row2 {
   background-image: url(./images/mainimg3.jpg);
-  background- size: cover;
+  background-size: cover;
   grid-area: small-bottom;
 }
 
@@ -497,7 +497,7 @@ aside h2:hover,
   }
 
   .text {
-    font-size: 48px;
+   font-size: 48px;
   }
 
   .secgrid {
@@ -512,17 +512,57 @@ aside h2:hover,
   }
 
   .most {
-    width: 88%;
+    width: 94%;
+    margin-bottom: -23%;
+  }
+
+  .section {
+    margin-top: 100%;
   }
 }
 
 @media screen and (max-width: 770px) {
+  nav {
+    width: 116%;
+  }
+  
   .text {
     font-size: 24px;
   }
 
-  .subtext {
-    font-size: 16px;
+  .sub-text {
+    font-size: 14px;
+  }
+
+  main {
+    width: 114%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .col1 { 
+    grid-column:1/4;
+  }
+
+  .col2 {
+    grid-column: 4/5;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .coldate a {
+    font-size: 12px;
+  }
+
+  .row2 {
+    grid-column: 4/5;
+  }
+
+  .colmargin {
+    margin-top: 52%;
+  }
+
+  .secgrid {
+    width: 9%;
   }
 }
 
