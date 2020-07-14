@@ -106,6 +106,10 @@ padding: 1.1em;
   background-size: cover;
 }
 
+ .colmargin {
+  margin-top: 22%;
+} 
+
 .text {
   font-size:56px;
   color: #FFF;
@@ -366,9 +370,9 @@ aside > ul {
   content: "\2022";  
   color: #ff4422; 
   font-weight: bold; 
-  display: inline-block; 
+  display: inline-block;
   width: 1em; 
-  margin-left: -1.7em; 
+  margin-left: -1.7em;
 }
 
 footer {
@@ -486,4 +490,53 @@ aside h2:hover,
 
 .search-button:hover {
   color: grey;
+}
+
+@media screen and (max-width: 1024px){
+  main {
+    width: 95%;
+    }
+
+    .col1 {
+      height: 440px;
+    }
+
+  .text {
+    font-size: 48px;
+  }
+
+  .secgrid {
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+    grid-gap: 5%;
+  }
+
+  .mostpopular {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7%;
+  }
+
+  .most {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 770px){
+  .text {
+    font-size: 24px;
+  }
+
+  .subtext {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .text {
+    font-size: 24px;
+  }
+
+  .subtext {
+    font-size: 16px;
+  }
 }
