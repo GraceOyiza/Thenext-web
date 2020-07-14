@@ -198,10 +198,6 @@ aside {
   justify-content: space-between;
 }
 
-aside ul {
-  display: flex;
-}
-
 .about li {
   color: white;
 }
