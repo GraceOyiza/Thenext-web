@@ -351,7 +351,7 @@ aside > ul {
   background-color: #f5e1de;
 }
 
-.mostflex {
+.smostflex {
   padding-left: 3px;
 }
 
@@ -497,7 +497,7 @@ aside h2:hover,
   }
 
   .text {
-   font-size: 48px;
+    font-size: 48px;
   }
 
   .secgrid {
@@ -512,60 +512,96 @@ aside h2:hover,
   }
 
   .most {
-    width: 94%;
-    margin-bottom: -23%;
-  }
-
-  .section {
-    margin-top: 100%;
+    width: 88%;
   }
 }
 
 @media screen and (max-width: 770px) {
-  nav {
-    width: 116%;
-  }
-  
   .text {
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 900;
   }
 
-  .sub-text {
-    font-size: 14px;
+  .subtext {
+    font-size: 16px;
   }
 
-  main {
-    width: 114%;
-    grid-template-columns: repeat(4, 1fr);
+  .get {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
   }
 
-  .col1 { 
-    grid-column:1/4;
+  .second-nav li {
+    margin-top: -15px;
+    font-size: 8px;
+    padding-right: 10px ;
+    
   }
 
-  .col2 {
-    grid-column: 4/5;
-    background-size: cover;
-    background-position: center;
+  .first-nav li {
+    padding-left: 10px;
+    font-size: 10px;
+    
   }
 
-  .coldate a {
-    font-size: 12px;
-  }
-
-  .row2 {
-    grid-column: 4/5;
-  }
-
-  .colmargin {
-    margin-top: 52%;
-  }
-
-  .secgrid {
-    width: 9%;
-  }
+  .first {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 7px;
+    background-color: black;
+  
 }
 
+/* .search {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  color: red;
+  background-color: white;
+} */
+
+main {
+  margin-top: -50px;
+  margin-left: 3px;
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "large small-top"
+    "large small-bottom";
+}
+
+.col1 {
+  grid-area: large;
+  height: 270px;
+  margin-right: 1%;
+  background-size: cover;
+  background-position: center;
+}
+
+.col2 {
+  background-size: cover;
+  grid-area: small-top;
+  margin-bottom: 1%;
+}
+
+.row2 {
+  background-size: cover;
+  grid-area: small-bottom;
+}
+
+.colmargin {
+  margin-top: 72%;
+  margin-left: 10px;
+}
+
+.colfooter {
+  color: grey;
+  padding-left: 2px;
+  font-size: 10px;
+}
+
+}
 @media screen and (max-width: 400px) {
   .text {
     font-size: 24px;
