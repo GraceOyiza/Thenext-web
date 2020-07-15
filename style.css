@@ -500,7 +500,28 @@ aside h2:hover,
   }
 
   .col1 {
-    height: 440px;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    width: 670px;
+    height: 541px;
+    background-position: center;
+  }
+
+  .col2 {
+    grid-column: 4/5;
+    width: 330px;
+    height: 268px;
+    margin-left: 9%;
+    margin-top: 2px;
+    background-position: center;
+  }
+
+  .row2 {
+    grid-column: 4/5;
+    width: 330px;
+    height: 268px;
+    margin-left: 9%;
+    background-position: center;
   }
 
   .text {
@@ -508,14 +529,22 @@ aside h2:hover,
   }
 
   .secgrid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: auto;
     grid-gap: 5%;
   }
 
+  section {
+    width: 92%;
+}
+
+  section figure {
+    width: 118%;
+  }
+
   .mostpopular {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 7%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
   }
 
   .most {
@@ -523,9 +552,7 @@ aside h2:hover,
     margin-bottom: -25%;
   }
 
-  .secmargin {
-    margin-top: 100%;
-  }
+  
 }
 
 @media screen and (max-width: 770px) {
@@ -536,28 +563,31 @@ aside h2:hover,
   main {
     grid-template-columns: repeat(4, 1fr);
     width: 98%;
-}
+  }
 
   .col1 {
     grid-column: 1/4;
     grid-row: 1/4;
     width: 492px;
     height: 496px;
+    background-position: center;
   }
 
   .col2 {
     grid-column: 4/5;
     width: 255px;
     height: 243px;
-    margin-left: 4%;
+    margin-left: 1%;
     margin-top: 2px;
+    background-position: center;
   }
 
   .row2 {
     grid-column: 4/5;
     width: 255px;
     height: 247px;
-    margin-left: 4%;
+    margin-left: 1%;
+    background-position: center;
   }
 
   .most {
@@ -599,19 +629,26 @@ aside h2:hover,
     margin-top: 150%;
   }
 
-  
   section img {
     width: 300%;
     height: 155px;
     margin-top: 5%;
-  
-  }
+ }
 
-  
+ .text {
+   font-size: 46px;
+  color: #fff;
+  text-decoration: none;
+ }
+
 section {
   width: 100%;
-  /* margin: 5% 5%; */
   padding-right: 10%;
+}
+
+section img {
+  width: 229px;
+  height: 114px;
 }
 
 aside > ul {
@@ -623,11 +660,15 @@ aside > ul {
 .secgrid {
   grid-template-columns: repeat(3, 1fr);
   width: auto;
-  
 }
 
+.colmargin {
+  margin: 9.9em 0 0 1.1em;
+ }
 
-
+ .sub-text{
+  font-size: 18px;
+}
 
 }
 
