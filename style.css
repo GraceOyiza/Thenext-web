@@ -142,12 +142,12 @@ main {
 }
 
 section a {
-  font-size: 22px;
+  font-size: 16px;
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   display: block;
-  width: 70%;
+  width: 90%;
 }
 
 .colfooter a {
@@ -178,7 +178,7 @@ section {
 section h2,
 aside h2 {
   color: #f42;
-  font-size: 28px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 2%;
 }
@@ -549,7 +549,7 @@ aside h2:hover,
     grid-column: 4/5;
     width: 255px;
     height: 243px;
-    margin-left: 12%;
+    margin-left: 4%;
     margin-top: 2px;
   }
 
@@ -557,7 +557,7 @@ aside h2:hover,
     grid-column: 4/5;
     width: 255px;
     height: 247px;
-    margin-left: 12%;
+    margin-left: 4%;
   }
 
   .most {
@@ -598,6 +598,37 @@ aside h2:hover,
   .secmargin {
     margin-top: 150%;
   }
+
+  
+  section img {
+    width: 300%;
+    height: 155px;
+    margin-top: 5%;
+  
+  }
+
+  
+section {
+  width: 100%;
+  /* margin: 5% 5%; */
+  padding-right: 10%;
+}
+
+aside > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.secgrid {
+  grid-template-columns: repeat(3, 1fr);
+  width: auto;
+  
+}
+
+
+
+
 }
 
 @media screen and (max-width: 320px) {
