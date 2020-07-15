@@ -625,11 +625,6 @@ aside h2:hover,
     grid-template-columns: 1fr 1fr;
   }
 
-  .text {
-    font-size: 18px;
-    font-weight: 900;
-  }
-
   .subtext {
     font-size: 16px;
   }
@@ -657,12 +652,6 @@ aside h2:hover,
   }
 
   .secmargin {
-    margin-top: 5%;
-  }
-
-  section img {
-    width: 300%;
-    height: 155px;
     margin-top: 5%;
   }
 
