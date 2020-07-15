@@ -20,7 +20,11 @@ a {
   background-color: black;
 }
 
-.hiddennav {
+.hiddennavi {
+  display: none;
+}
+
+.hiddennav2 {
   display: none;
 }
 
@@ -178,7 +182,7 @@ section {
 section h2,
 aside h2 {
   color: #f42;
-  font-size: 16px;
+  font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 2%;
 }
@@ -495,40 +499,93 @@ aside h2:hover,
 }
 
 @media screen and (max-width: 1025px) {
+
   main {
-    width: 95%;
+    width: 98%;
   }
 
   .col1 {
-    height: 440px;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    width: 670px;
+    height: 541px;
+    background-position: center;
   }
+
+  .col2 {
+    display: block;
+    grid-column: 4/5;
+    width: 365px;
+    height: 268px;
+    margin-left: 10%;
+    margin-top: 2px;
+    background-position: center;
+  }
+
+  .row2 {
+    grid-column: 4/5;
+    width: 330px;
+    height: 268px;
+    margin-left: 10%;
+    background-position: center;
+  }
+
+  .colmargin {
+    margin: 12.9em 0 0 1.1em;
+   }
 
   .text {
     font-size: 48px;
   }
 
   .secgrid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: auto;
     grid-gap: 5%;
   }
 
+  section {
+    width: 92%;
+  }
+
+  section figure {
+    width: 118%;
+  }
+
   .mostpopular {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 7%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
   }
 
   .most {
     width: 94%;
-    margin-bottom: -25%;
   }
 
-  .secmargin {
-    margin-top: 100%;
-  }
+  .absolute a,
+  .absolute span {
+    margin-top: 40%;
+    width: 70%;
+    color: rgb(255, 255, 255)
+  } 
+  
 }
 
 @media screen and (max-width: 770px) {
+
+  .first,
+  .get,
+  .hiddennav {
+    visibility: hidden;
+    height: 25px;
+  }
+
+  .hiddennav2 {
+    display: table;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+  }
+
   nav {
     width: 100%;
   }
@@ -536,32 +593,42 @@ aside h2:hover,
   main {
     grid-template-columns: repeat(4, 1fr);
     width: 98%;
-}
+  }
 
   .col1 {
     grid-column: 1/4;
     grid-row: 1/4;
     width: 492px;
     height: 496px;
+    background-position: center;
   }
 
   .col2 {
     grid-column: 4/5;
     width: 255px;
     height: 243px;
-    margin-left: 4%;
+    margin-left: 1%;
     margin-top: 2px;
+    background-position: center;
   }
 
   .row2 {
     grid-column: 4/5;
     width: 255px;
     height: 247px;
-    margin-left: 4%;
+    margin-left: 1%;
+    background-position: center;
   }
 
   .most {
-    width: 108%;
+    width: 100%;
+  }
+
+  .mostpopular {
+    width: auto;
+    margin: 0 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .text {
@@ -596,20 +663,29 @@ aside h2:hover,
   }
 
   .secmargin {
-    margin-top: 150%;
+    margin-top: 5%;
   }
 
-  
   section img {
     width: 300%;
     height: 155px;
     margin-top: 5%;
-  
-  }
-  
+ }
+
+ .text {
+   font-size: 46px;
+  color: #fff;
+  text-decoration: none;
+ }
+
 section {
   width: 100%;
   padding-right: 10%;
+}
+
+section img {
+  width: 229px;
+  height: 114px;
 }
 
 aside > ul {
@@ -620,51 +696,42 @@ aside > ul {
 
 .secgrid {
   grid-template-columns: repeat(3, 1fr);
-  width: auto; 
+  width: auto;
 }
 
-.mostpopular {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 7%;
-    /* width: auto;
-  margin: 5% 5%; */
+.colmargin {
+  margin: 9.9em 0 0 1.1em;
+ }
+
+ .sub-text{
+  font-size: 18px;
 }
 
-.most h2 {
-  font-size: 28px;
-  color: #f42;
-  margin-bottom: 5%;
-  display: flex;
+footer {
+  height: 48em;
 }
 
-
-.mostflex-right {
-  width: 100%;
-  padding-left: 20%;
-  ;
-}
-
-.mostflex {
-  padding-bottom: -70px;
+.mostflex-right img {
+  margin-left: 40%;
 }
 
 }
 
 @media screen and (max-width: 320px) {
   .first,
-  .get {
+  .get,
+  .hiddennav2 {
     visibility: hidden;
     height: 25px;
   }
 
-  .hiddennav {
+  .hiddennavi {
     display: table;
     position: fixed;
     top: 0;
     z-index: 50;
   }
-  
+
   main {
     display: grid;
     grid-template-columns: 1fr;
@@ -674,18 +741,26 @@ aside > ul {
     grid-column: 1;
     grid-row: 1;
     height: 180px;
+    background-position: center;
   }
-
+  
   .col2 {
     grid-column: 1;
     grid-row: 2;
     height: 180px;
+    width: 100%;
+    background-position: center;
   }
 
   .row2 {
     grid-column: 1;
     grid-row: 3;
     height: 180px;
+    width: 100%;
+  }
+
+  .text {
+    font-size: 18px;
   }
   
   aside ul {
@@ -707,7 +782,7 @@ aside > ul {
   }
 
   .coldate {
-    margin-right: 12%;
+    margin-right: 34%;
   }
 
   .mostpopular {
@@ -725,7 +800,7 @@ aside > ul {
   }
 
   footer {
-    height: 14em;
+    height: 18em;
   }
 
   .brandrights span {
@@ -756,11 +831,18 @@ aside > ul {
   }
 
   .most {
-    margin-bottom: -78%;
+    margin-bottom: -18%;
   }
 
   .mostflex {
     width: 91%;
+  }
+
+  section figcaption {
+    margin-left: -58%;
+    margin-top: 4%;
+    width: 60%;
+    display: block;
   }
 
   .absolute {
