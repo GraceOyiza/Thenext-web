@@ -354,8 +354,8 @@ aside > ul {
 .mostflex {
   display: flex;
   width: 100%;
-	background-color: #f5e1de;
-	padding-left: 3px;
+background-color: #f5e1de;
+padding-left: 3px;
 }
 
 .mostflex-right {
@@ -562,7 +562,6 @@ aside h2:hover,
     width: 70%;
     color: rgb(255, 255, 255);
   }
-
 }
 
 @media screen and (max-width: 770px) {
@@ -637,7 +636,7 @@ aside h2:hover,
   .second-nav li {
     font-size: 14px;
     padding-right: 10px;
-    }
+  }
 
   .first-nav li {
     padding-left: 10px;
