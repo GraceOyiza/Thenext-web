@@ -354,8 +354,8 @@ aside > ul {
 .mostflex {
   display: flex;
   width: 100%;
-background-color: #f5e1de;
-padding-left: 3px;
+  background-color: #f5e1de;
+  padding-left: 3px;
 }
 
 .mostflex-right {
