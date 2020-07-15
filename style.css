@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 ul {
@@ -17,6 +18,10 @@ a {
   grid-template-columns: 1fr 1fr;
   padding: 5px;
   background-color: black;
+}
+
+.hiddennav {
+  display: none;
 }
 
 .first-nav {
@@ -193,22 +198,16 @@ aside {
   margin: 10% 5%;
 }
 
-.sidehead {
-  display: flex;
-  justify-content: space-between;
+aside i {
+  margin-right: 2%;
 }
 
 .about li {
   color: white;
 }
 
-.latestdeals a {
-  margin: 3% 0;
-}
-
-.sidehead ul li {
-  margin-top: 10px;
-  margin-right: 30px;
+.sideheadright ul li {
+  margin-right: 3px;
 }
 
 .footerlogo ul li {
@@ -238,9 +237,9 @@ aside {
   text-decoration: none;
 }
 
-.sidehead ul li a {
+.sideheadright ul li a {
   color: #f42;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 aside ul {
@@ -317,6 +316,7 @@ aside > ul {
   background-image: url(./images/secimg8.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .absolute p {
@@ -349,18 +349,21 @@ aside > ul {
 
 .mostflex {
   display: flex;
-  width: 92%;
+  width: 100%;
   background-color: #f5e1de;
 }
 
-.smostflex {
+.mostflex {
   padding-left: 3px;
+}
+
+.mostflex-right {
+  width: 100%;
 }
 
 .most ul {
   list-style: none;
   width: 90%;
-  margin-left: 5%;
 }
 
 .latestdeals a img {
@@ -374,7 +377,7 @@ aside > ul {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   border-bottom: 1px solid rgb(172, 168, 168);
-  line-height: 1.8rem;
+  line-height: 1.5rem;
 }
 
 .most ul li::before {
@@ -383,7 +386,7 @@ aside > ul {
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  margin-left: -1.7em;
+  
 }
 
 footer {
@@ -401,7 +404,7 @@ footer {
 }
 
 .footerlogo i {
-  font-size: larger;
+  font-size: 22px;
   color: #111;
 }
 
@@ -455,7 +458,7 @@ section span {
   text-decoration: underline;
 }
 
-.sidehead ul li a:hover {
+.sideheadright ul li a:hover {
   color: black;
 }
 
@@ -527,25 +530,34 @@ aside h2:hover,
 
 @media screen and (max-width: 770px) {
   nav {
-    width: 116%;
+    width: 100%;
   }
 
   main {
-    width: 114%;
     grid-template-columns: repeat(4, 1fr);
-  }
+    width: 98%;
+}
 
   .col1 {
     grid-column: 1/4;
     grid-row: 1/4;
+    width: 492px;
+    height: 496px;
   }
 
   .col2 {
     grid-column: 4/5;
+    width: 255px;
+    height: 243px;
+    margin-left: 12%;
+    margin-top: 2px;
   }
 
   .row2 {
     grid-column: 4/5;
+    width: 255px;
+    height: 247px;
+    margin-left: 12%;
   }
 
   .most {
@@ -567,8 +579,7 @@ aside h2:hover,
   }
 
   .second-nav li {
-    margin-top: -15px;
-    font-size: 8px;
+    font-size: 14px;
     padding-right: 10px;
   }
 
@@ -587,5 +598,132 @@ aside h2:hover,
   .secmargin {
     margin-top: 150%;
   }
+}
+
+@media screen and (max-width: 320px) {
+  .first,
+  .get {
+    visibility: hidden;
+    height: 25px;
+  }
+
+  .hiddennav {
+    display: table;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .col1 {
+    grid-column: 1;
+    grid-row: 1;
+    height: 180px;
+  }
+
+  .col2 {
+    grid-column: 1;
+    grid-row: 2;
+    height: 180px;
+  }
+
+  .row2 {
+    grid-column: 1;
+    grid-row: 3;
+    height: 180px;
+  }
+  
+  aside ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .colmargin {
+   width: 80%;
+   margin: 5.9em 0 0 1.1em;
+  }
+
+  .colfooter {
+    font-size: 12px;
+  }
+
+  .sub-text{
+    font-size: 18px;
+  }
+
+  .coldate {
+    margin-right: 12%;
+  }
+
+  .mostpopular {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .secgrid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .secmargin {
+    margin-top: 0;
+  }
+
+  footer {
+    height: 14em;
+  }
+
+  .brandrights span {
+    font-size: 11px;
+  }
+
+  .about li {
+    font-size: 11px;
+  }
+
+  section img,
+  .latestdeals a img {
+    width: 80px;
+    height: 80px;
+  }
+
+  section a {
+    font-size: 14px;
+    width: 85%;
+  }
+
+  figure {
+    display: flex;
+  }
+
+  section h2 {
+    margin: 8% 0;
+  }
+
+  .most {
+    margin-bottom: -78%;
+  }
+
+  .mostflex {
+    width: 91%;
+  }
+
+  .absolute {
+    width: 280px;
+    height: 210px;
+    background-image: url(./images/secimg8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .absolute p,
+  .absolute a,
+  .absolute span {
+    margin-top: 16%;
+  } 
 }
 
