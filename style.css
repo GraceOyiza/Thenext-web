@@ -603,7 +603,6 @@ aside h2:hover,
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 616px) {
-  
   nav {
     width: 100%;
   }
@@ -661,18 +660,14 @@ aside h2:hover,
     grid-template-columns: 1fr 1fr;
   }
 
-  .sub-text {
-    font-size: 16px;
-  }
-
   .search {
     padding: 15px 0 0 290px;
     margin-left: 65px;
   }
 
- .second-nav{
-   padding: 15px 0 0;
-   margin-left: 15px;
+ .second-nav {
+    padding: 15px 0 0;
+    margin-left: 15px;
  }
 
   .second-nav li {
@@ -738,6 +733,7 @@ aside h2:hover,
   .sideheadright ul li {
    margin: 0.3em;
   }
+  
   .secgrid {
     grid-template-columns: repeat(3, 1fr);
     width: auto;
@@ -758,7 +754,6 @@ aside h2:hover,
   .mostflex-right img {
     margin-left: 40%;
   }
-
 }
 
 @media only screen and (min-width: 320px) and (max-width: 615px) {
@@ -767,7 +762,7 @@ aside h2:hover,
     grid-template-columns: 1fr;
   }
 
-  .first{
+  .first {
     display: none;
   }
 
@@ -904,4 +899,3 @@ aside h2:hover,
   }
 
 }
-
