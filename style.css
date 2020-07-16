@@ -20,14 +20,6 @@ a {
   background-color: black;
 }
 
-.hiddennavi {
-  display: none;
-}
-
-.hiddennav2 {
-  display: none;
-}
-
 .first-nav {
   display: flex;
 }
@@ -69,9 +61,6 @@ a {
   z-index: 10;
   background-color: white;
   padding: 2px;
-  border-bottom: 10px solid white;
-  /* margin-top: 20px; */
-
 }
 
 .second-nav {
@@ -361,7 +350,7 @@ aside > ul {
 
 .mostflex {
   display: flex;
-  width: 100%;
+  width: 92%;
   background-color: #f5e1de;
   padding-left: 3px;
 }
@@ -502,7 +491,7 @@ aside h2:hover,
   }
 }
 
-@media screen and (max-width: 1025px) {
+@media only screen and (min-width: 1025px) and (max-width: 1290px) {
   main {
     width: 98%;
   }
@@ -510,31 +499,31 @@ aside h2:hover,
   .col1 {
     grid-column: 1/4;
     grid-row: 1/4;
-    width: 670px;
-    height: 541px;
+    width: 839px;
+    height: 524px;
     background-position: center;
   }
 
   .col2 {
     display: block;
     grid-column: 4/5;
-    width: 365px;
-    height: 268px;
-    margin-left: 10%;
+    width: 415px;
+    height: 258px;
+    margin-left: 2%;
     margin-top: 2px;
     background-position: center;
   }
 
   .row2 {
     grid-column: 4/5;
-    width: 330px;
-    height: 268px;
-    margin-left: 10%;
+    width: 415px;
+    height: 258px;
+    margin-left: 2%;
     background-position: center;
   }
 
   .colmargin {
-    margin: 12.9em 0 0 1.1em;
+    margin: 8.9em 0 0 1.1em;
   }
 
   .text {
@@ -548,11 +537,7 @@ aside h2:hover,
   }
 
   section {
-    width: 92%;
-  }
-
-  section figure {
-    width: 118%;
+    width: 94%;
   }
 
   .mostpopular {
@@ -560,36 +545,30 @@ aside h2:hover,
     grid-gap: 2%;
   }
 
-  .most {
-    width: 94%;
+  .mostpopular ul {
+    width: 100%;
+  }
+
+  .mostflex {
+    width: 95%;
+  }
+
+  .mostflex-right {
+    position: relative;
+    left: 10%;
   }
 
   .absolute a,
   .absolute span {
     margin-top: 40%;
-    width: 70%;
+    margin-left: 2%;
+    width: 80%;
     color: rgb(255, 255, 255);
   }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 616px) {
-  /* .first,
-  .get,
-  .hiddennav {
-    visibility: visible;
-    height: 25px;
-  } */
-  .get {
-
-  }
-
-  .hiddennav2 {
-    display: table;
-    position: fixed;
-    top: 0;
-    z-index: 50;
-  }
-
+  
   nav {
     width: 100%;
   }
@@ -602,14 +581,14 @@ aside h2:hover,
   .col1 {
     grid-column: 1/4;
     grid-row: 1/4;
-    width: 492px;
+    width: 100%;
     height: 496px;
     background-position: center;
   }
 
   .col2 {
     grid-column: 4/5;
-    width: 255px;
+    width: 100%;
     height: 243px;
     margin-left: 1%;
     margin-top: 2px;
@@ -618,13 +597,21 @@ aside h2:hover,
 
   .row2 {
     grid-column: 4/5;
-    width: 255px;
+    width: 100%;
     height: 247px;
     margin-left: 1%;
     background-position: center;
   }
 
   .most {
+    width: 97%;
+  }
+
+  .mostflex {
+    width: 100%;
+  }
+
+  .absolute {
     width: 100%;
   }
 
@@ -639,10 +626,6 @@ aside h2:hover,
     font-size: 16px;
   }
 
-  .get {
-    display: flex;
-    /* grid-template-columns: 1fr 0.1fr; */
-  }
   .search {
     padding: 15px 0 0 20px;
     margin-left: 65px;
@@ -737,21 +720,8 @@ aside h2:hover,
   }
 }
 
-@media screen and (max-width: 320px) {
-  .first,
-  .get,
-  .hiddennav2 {
-    visibility: hidden;
-    height: 25px;
-  }
-
-  .hiddennavi {
-    display: table;
-    position: fixed;
-    top: 0;
-    z-index: 50;
-  }
-
+@media only screen and (min-width: 320px) and (max-width: 615px) {
+  
   main {
     display: grid;
     grid-template-columns: 1fr;
@@ -760,14 +730,15 @@ aside h2:hover,
   .col1 {
     grid-column: 1;
     grid-row: 1;
-    height: 180px;
+    height: 160px;
+    width: 100%;
     background-position: center;
   }
 
   .col2 {
     grid-column: 1;
     grid-row: 2;
-    height: 180px;
+    height: 160px;
     width: 100%;
     background-position: center;
   }
@@ -775,8 +746,9 @@ aside h2:hover,
   .row2 {
     grid-column: 1;
     grid-row: 3;
-    height: 180px;
+    height: 160px;
     width: 100%;
+    background-position: center;
   }
 
   .text {
@@ -801,18 +773,15 @@ aside h2:hover,
     font-size: 18px;
   }
 
-  .coldate {
-    margin-right: 34%;
-  }
-
   .mostpopular {
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .secgrid {
     grid-template-columns: 1fr;
-    width: 100%;
+    width: 90%;
   }
 
   .secmargin {
@@ -839,7 +808,7 @@ aside h2:hover,
 
   section a {
     font-size: 14px;
-    width: 85%;
+    width: 100%;
   }
 
   figure {
@@ -850,23 +819,16 @@ aside h2:hover,
     margin: 8% 0;
   }
 
-  .most {
-    margin-bottom: -18%;
-  }
-
   .mostflex {
-    width: 91%;
+    width: 88%;
   }
 
   section figcaption {
-    margin-left: -58%;
-    margin-top: 4%;
-    width: 60%;
-    display: block;
+    margin-top: 2%;
   }
 
   .absolute {
-    width: 280px;
+    width: 88%;
     height: 210px;
     background-image: url(./images/secimg8.png);
     background-repeat: no-repeat;
@@ -883,7 +845,6 @@ aside h2:hover,
 .logo {
   width: 60%;
   margin: 15px auto 0 auto;
-
 }
 
 .logocontainer {
