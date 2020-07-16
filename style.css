@@ -67,6 +67,11 @@ a {
   right: 0;
   width: 100%;
   z-index: 10;
+  background-color: white;
+  padding: 2px;
+  border-bottom: 10px solid white;
+  /* margin-top: 20px; */
+
 }
 
 .second-nav {
@@ -95,7 +100,7 @@ a {
 }
 
 main {
-  margin: 0 1%;
+  margin: 5% 1%;
   display: grid;
   grid-template-columns: 1fr 500px;
   grid-template-rows: repeat(2, 1fr);
