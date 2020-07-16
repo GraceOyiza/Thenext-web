@@ -60,8 +60,13 @@ a {
 }
 
 .get {
-  display: grid;
-  grid-template-columns: 2fr 0.1fr;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .second-nav {
@@ -80,11 +85,9 @@ a {
 }
 
 .search {
-  display: flex;
-  justify-content: flex-end;
-  padding: 25px;
-  color: grey;
-  background-color: white;
+  padding: 25px 0 0 20px;
+  margin-left: 43%;
+  border-left: 1px solid #ccc;
 }
 
 .search-button {
@@ -354,8 +357,8 @@ aside > ul {
 .mostflex {
   display: flex;
   width: 100%;
-background-color: #f5e1de;
-padding-left: 3px;
+  background-color: #f5e1de;
+  padding-left: 3px;
 }
 
 .mostflex-right {
@@ -564,12 +567,15 @@ aside h2:hover,
   }
 }
 
-@media screen and (max-width: 770px) {
-  .first,
+@media only screen and (max-width: 1024px) and (min-width: 616px) {
+  /* .first,
   .get,
   .hiddennav {
-    visibility: hidden;
+    visibility: visible;
     height: 25px;
+  } */
+  .get {
+
   }
 
   .hiddennav2 {
@@ -629,10 +635,18 @@ aside h2:hover,
   }
 
   .get {
-    display: grid;
-    grid-template-columns: 1fr 0.1fr;
+    display: flex;
+    /* grid-template-columns: 1fr 0.1fr; */
   }
-
+  .search {
+    padding: 15px 0 0 20px;
+    margin-left: 65px;
+    border-left: 1px solid #ccc;
+  }
+ .second-nav{
+   padding: 15px 0 0 ;
+   margin-left: 15px;
+ }
   .second-nav li {
     font-size: 14px;
     padding-right: 10px;
@@ -676,6 +690,26 @@ aside h2:hover,
     gap: 25px;
   }
 
+  .hide {
+    display: none;
+  }
+
+  .image1 {
+    width: 100%;
+  }
+
+  aside {
+    width: 90%;
+  }
+
+  .sideheadright ul {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sideheadright ul li {
+   margin: 0.3em;
+  }
   .secgrid {
     grid-template-columns: repeat(3, 1fr);
     width: auto;
@@ -840,3 +874,17 @@ aside h2:hover,
     margin-top: 16%;
   }
 }
+
+.logo {
+  width: 60%;
+  margin: 15px auto 0 auto;
+
+}
+
+.logocontainer {
+  width: 110px;
+  background-color: #f42;
+  height: 50px;
+}
+
+
