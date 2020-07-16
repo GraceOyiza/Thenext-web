@@ -20,6 +20,15 @@ a {
   background-color: black;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 11;
+  box-shadow: 0 0 32px rgba(0,0,0,.15); 
+}
+
 .first-nav {
   display: flex;
 }
@@ -53,12 +62,6 @@ a {
 
 .get {
   display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 10;
   background-color: white;
   padding: 2px;
 }
@@ -192,6 +195,17 @@ section img {
   width: 270px;
   height: 135px;
   margin-top: 5%;
+}
+
+.logo {
+  width: 60%;
+  margin: 15px auto 0 auto;
+}
+
+.logocontainer {
+  width: 110px;
+  background-color: #f42;
+  height: 50px;
 }
 
 aside {
@@ -489,11 +503,16 @@ aside h2:hover,
   .most {
     width: 105%;
   }
+
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1290px) {
   main {
     width: 98%;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .col1 {
@@ -565,6 +584,17 @@ aside h2:hover,
     width: 80%;
     color: rgb(255, 255, 255);
   }
+
+  .second-nav {
+    width: 54%;
+  }
+
+  .search {
+    padding: 26px 0 0 30px;
+    margin-left: 31%;
+    border-left: 1px solid #ccc;
+  }
+
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 616px) {
@@ -576,6 +606,10 @@ aside h2:hover,
   main {
     grid-template-columns: repeat(4, 1fr);
     width: 98%;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .col1 {
@@ -627,10 +661,10 @@ aside h2:hover,
   }
 
   .search {
-    padding: 15px 0 0 20px;
+    padding: 15px 0 0 290px;
     margin-left: 65px;
-    border-left: 1px solid #ccc;
   }
+
  .second-nav{
    padding: 15px 0 0 ;
    margin-left: 15px;
@@ -725,6 +759,28 @@ aside h2:hover,
   main {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .first{
+    display: none;
+  }
+
+  .second-nav {
+    display: none;
+  }
+
+  .hamburger {
+    color: #f42;
+    padding: 0 0 0 20px;
+    margin-left: -2%;
+    font-size: 20px;
+  }
+
+  .search {
+    padding: 25px 0 0 10px;
+    margin-left: 39%;
+    margin-bottom: 10px;
+    font-size: 20px;
   }
 
   .col1 {
@@ -842,15 +898,5 @@ aside h2:hover,
   }
 }
 
-.logo {
-  width: 60%;
-  margin: 15px auto 0 auto;
-}
-
-.logocontainer {
-  width: 110px;
-  background-color: #f42;
-  height: 50px;
-}
 
 
