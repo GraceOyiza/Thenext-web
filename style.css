@@ -26,7 +26,7 @@ nav {
   right: 0;
   left: 0;
   z-index: 11;
-  box-shadow: 0 0 32px rgba(0,0,0,.15); 
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
 }
 
 .first-nav {
@@ -50,6 +50,10 @@ nav {
 .left-nav li {
   padding-left: 10px;
   padding-right: 20px;
+}
+
+.hamburger {
+  display: none;
 }
 
 .grey {
@@ -332,6 +336,7 @@ aside > ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow-y: hidden;
 }
 
 .absolute p {
@@ -656,7 +661,7 @@ aside h2:hover,
     grid-template-columns: 1fr 1fr;
   }
 
-  .subtext {
+  .sub-text {
     font-size: 16px;
   }
 
@@ -666,9 +671,10 @@ aside h2:hover,
   }
 
  .second-nav{
-   padding: 15px 0 0 ;
+   padding: 15px 0 0;
    margin-left: 15px;
  }
+
   .second-nav li {
     font-size: 14px;
     padding-right: 10px;
@@ -725,8 +731,8 @@ aside h2:hover,
   }
 
   .sideheadright ul {
-    display: flex;
-    flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
   }
 
   .sideheadright ul li {
@@ -752,10 +758,10 @@ aside h2:hover,
   .mostflex-right img {
     margin-left: 40%;
   }
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 615px) {
-  
   main {
     display: grid;
     grid-template-columns: 1fr;
@@ -845,7 +851,7 @@ aside h2:hover,
   }
 
   footer {
-    height: 18em;
+    height: 13em;
   }
 
   .brandrights span {
@@ -896,7 +902,6 @@ aside h2:hover,
   .absolute span {
     margin-top: 16%;
   }
+
 }
-
-
 
