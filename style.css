@@ -68,6 +68,7 @@ nav {
   display: flex;
   background-color: white;
   padding: 2px;
+  justify-content: start;
 }
 
 .second-nav {
@@ -87,8 +88,9 @@ nav {
 
 .search {
   padding: 25px 0 0 20px;
-  margin-left: 43%;
   border-left: 1px solid #ccc;
+  margin-left: auto;
+  padding-right: 15px;
 }
 
 .search-button {
@@ -508,7 +510,6 @@ aside h2:hover,
   .most {
     width: 105%;
   }
-
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1290px) {
@@ -590,20 +591,12 @@ aside h2:hover,
     color: rgb(255, 255, 255);
   }
 
-  .second-nav {
-    width: 54%;
-  }
-
   .search {
-    padding: 26px 0 0 30px;
-    margin-left: 31%;
     border-left: 1px solid #ccc;
   }
-
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 616px) {
-  
   nav {
     width: 100%;
   }
@@ -661,19 +654,14 @@ aside h2:hover,
     grid-template-columns: 1fr 1fr;
   }
 
-  .sub-text {
-    font-size: 16px;
-  }
-
   .search {
-    padding: 15px 0 0 290px;
-    margin-left: 65px;
+    padding: 15px 20px 0 10px;
   }
 
- .second-nav{
-   padding: 15px 0 0;
-   margin-left: 15px;
- }
+  .second-nav {
+    padding: 15px 0 0;
+    margin-left: 10px;
+  }
 
   .second-nav li {
     font-size: 14px;
@@ -731,13 +719,14 @@ aside h2:hover,
   }
 
   .sideheadright ul {
-  display: flex;
-  flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .sideheadright ul li {
-   margin: 0.3em;
+    margin: 0.3em;
   }
+
   .secgrid {
     grid-template-columns: repeat(3, 1fr);
     width: auto;
@@ -758,7 +747,6 @@ aside h2:hover,
   .mostflex-right img {
     margin-left: 40%;
   }
-
 }
 
 @media only screen and (min-width: 320px) and (max-width: 615px) {
@@ -767,7 +755,7 @@ aside h2:hover,
     grid-template-columns: 1fr;
   }
 
-  .first{
+  .first {
     display: none;
   }
 
@@ -777,16 +765,26 @@ aside h2:hover,
 
   .hamburger {
     color: #f42;
-    padding: 0 0 0 20px;
+    padding: 0 10px 0 18px;
     margin-left: -2%;
     font-size: 20px;
+    display: block;
+  }
+
+  .get {
+    justify-content: space-between;
   }
 
   .search {
-    padding: 25px 0 0 10px;
-    margin-left: 39%;
-    margin-bottom: 10px;
+    margin-left: 112px;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  .search-button {
+    padding-left: 20px;
   }
 
   .col1 {
@@ -902,6 +900,26 @@ aside h2:hover,
   .absolute span {
     margin-top: 16%;
   }
-
 }
 
+@media only screen and (max-width: 768px) {
+  .second-nav {
+    display: none;
+  }
+
+  .first {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline;
+    padding-left: 20px;
+    color: #f42;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 20px;
+  }
+}

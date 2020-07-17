@@ -13,7 +13,7 @@ This project contains floating and positioning elements. Given colors like make 
 
 ## Live Demo
 
-[Live](https://rawcdn.githack.com/GraceOyiza/Thenext-web/92188b289082828d08a33d88d987f04c2f1ed99e/index.htmlg)
+[Live](https://rawcdn.githack.com/GraceOyiza/Thenext-web/4bc699476d32b93c3356e1d542507f723b3d83d1/index.html)
 
 
 👤 **Author**
