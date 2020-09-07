@@ -26,7 +26,7 @@ This project contains floating and positioning elements. Given colors like make 
 
 - Github: [@GraceOyiza](https://github.com/GraceOyiza)
 - Twitter: [@_PopsonGrace](https://twitter.com/_PopsonGrace)
-- LinkedIn: [@grace](https://www.linkedin.com/in/grace-popoola-657a181aa/)
+- LinkedIn: [@grace](https://www.linkedin.com/in/grace-popoola)
 
 
 ## 🤝 Contributing
